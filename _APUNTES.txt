@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------------
+-------------------------------Seccion 13 -------------------------------------------
+---------------------Bonus: repo de custom hooks ------------------------------------
+video 162 -- intro 
+--------------------------------------------------------------------------------------
+video 163 -- ¿Qué veremos en esta sección?
+
+Subir código a nuestro repositorio
+
+Tener un listado de customHooks y código que podemos reutilizar
+
+Una idea para mantener tu repositorio ordenado con ejemplos
+
+No es una sección obligatoria, pero puede ayudarles a tener su código ordenado y fácil de utilizar en proyectos futuros.
+---------------------------------------------------------------------------------------
+video 164 -- repo con Custom Hooks 
+
+https://github.com/
+
+propone crear una repo para poder reutilizar nuestros custom hooks 
+
+crea repo en github: mis-custom-hooks
+luego en local crea
+carpeta 06-repo-hooks y copio useForm/useFetch y useCounter hooks 
+
+git init    //inicializamos
+git add . //agregamos todo al stage
+git commit -m"primer commit"
+
+luego desde mi repo copio 
+-----------
+Pregunta:
+para crear custom packages en npm ?
+
+resp: 
+https://docs.npmjs.com/creating-node-js-modules.
+
+https://docs.npmjs.com/creating-and-publishing-private-packages.
+
+Y también tienes diferentes guias/tutoriales, como por ejemplo: https://www.youtube.com/watch?v=rTsz09zRuTU
+
+------------------------------------------------------------------------------------
