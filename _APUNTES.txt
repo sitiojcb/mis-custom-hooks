@@ -28,6 +28,9 @@ git add . //agregamos todo al stage
 git commit -m"primer commit"
 
 luego desde mi repo copio 
+git remote add origin git@github.com:sitiojcb/mis-custom-hooks.git
+git branch -M main
+git push -u origin main
 -----------
 Pregunta:
 para crear custom packages en npm ?
