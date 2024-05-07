@@ -1,31 +1,28 @@
-import {useState} from 'react'
+import { useState } from "react";
+//import PropType from "prop-types";
+//recordar export para poder usarlo...
+export const useCounter = (initialValue = 10) => {
+  const [counter, setCounter] = useState(initialValue);
 
-export const useCounter = (initialState = 10) => {
-
-    // const [state, setState] = useState(initialState);
-    const [counter, setCounter] = useState(initialState);
-
-    // const increment = (factor = 1) => {
-    //     setState( state + factor )
-    // }
-    // const decrement = (factor = 1) => {
-    //     setState(state - factor)
-    // }
-    const increment = () => {
-        setCounter(counter + 1)
-    }
-    const decrement = () => {
-        setCounter(counter - 1)
-    }
-    const reset = () => {
-        setCounter( initialState)
-    }
-
-    return {
-        // state,
-        counter,
-        increment,
-        decrement,
-        reset
-    }
-}
+  const increment = (value = 1) => {
+    // setCounter(counter + value);
+    setCounter((current) => current + value);
+  };
+  const decrement = (value = 1) => {
+    if (counter === 0) return;
+    // setCounter(counter - value);
+    setCounter((current) => current - value);
+  };
+  const reset = () => {
+    setCounter(initialValue);
+  };
+  return {
+    counter,
+    increment,
+    decrement,
+    reset,
+  };
+};
+// useCounter.protoType = {
+//   counter.PropType: Number.isRequired,
+// };
